@@ -11,7 +11,7 @@
         "base_multi_image"
     ],
     "data": [
-        "views/fsm_order_views.xml.xml"
+        "views/fsm_order_views.xml"
     ],
     "installable": True,
     "development_status": "Beta",
