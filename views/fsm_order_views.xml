@@ -4,8 +4,8 @@
         <field name="model">fsm.order</field>
         <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//page[@name='execution']" position="after">
-                <page string="Images" name="images">
+            <xpath expr="//notebook" position="inside">
+                <page string="Photos" name="photos">
                     <field name="image_ids" nolabel="1"
                         context="{
                             'default_owner_model': 'fsm.order',
