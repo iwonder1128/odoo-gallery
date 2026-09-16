@@ -7,17 +7,12 @@
     "license": "AGPL-3",
     "category": "Generic Modules",
     "depends": [
-        "attachment_queue",
-        "fs_storage",  # https://github.com/OCA/storage
+        "fieldservice",
+        "base_multi_image"
     ],
     "data": [
-        "views/attachment_queue_views.xml",
-        "views/attachment_synchronize_task_views.xml",
-        "views/storage_backend_views.xml",
-        "data/cron.xml",
-        "security/ir.model.access.csv",
+        "views/fsm_order_views.xml.xml"
     ],
-    "demo": ["demo/attachment_synchronize_task_demo.xml"],
     "installable": True,
     "development_status": "Beta",
 }
