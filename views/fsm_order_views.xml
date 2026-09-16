@@ -1,0 +1,19 @@
+<odoo>
+    <record id="fsm_order_form_multi_image" model="ir.ui.view">
+        <field name="name">fsm.order.form.multi.image</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='execution']" position="after">
+                <page string="Images" name="images">
+                    <field name="image_ids" nolabel="1"
+                        context="{
+                            'default_owner_model': 'fsm.order',
+                            'default_owner_id': id,
+                        }"
+                        mode="kanban"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
