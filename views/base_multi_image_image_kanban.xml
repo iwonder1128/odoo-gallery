@@ -1,0 +1,12 @@
+<odoo>
+    <record id="base_multi_image_image_kanban_bigger" model="ir.ui.view">
+        <field name="name">base.multi.image.image.kanban.bigger</field>
+        <field name="model">base_multi_image.image</field>
+        <field name="inherit_id" ref="base_multi_image.base_multi_image_image_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//aside" position="attributes">
+                <attribute name="style">min-height: 220px;</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
