@@ -4,15 +4,15 @@
         <field name="model">fsm.order</field>
         <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//notebook" position="inside">
-                <page string="Photos" name="photos">
+            <xpath expr="//notebook" position="after">
+                <group string="Photos">
                     <field name="image_ids" nolabel="1"
                         context="{
                             'default_owner_model': 'fsm.order',
                             'default_owner_id': id,
                         }"
-                        mode="kanban"/>
-                </page>
+                        mode="kanban" colspan="2"/>
+                </group>
             </xpath>
         </field>
     </record>
