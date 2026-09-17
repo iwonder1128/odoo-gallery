@@ -4,8 +4,8 @@
         <field name="model">base_multi_image.image</field>
         <field name="inherit_id" ref="base_multi_image.image_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//page[.//field[@name='name']]" position="before">
-                <xpath expr="//page[.//field[@name='image_1920']]" position="move"/>
+            <xpath expr="//page[@string='Basic Information']" position="before">
+                <xpath expr="//page[@string='Preview']" position="move"/>
             </xpath>
         </field>
     </record>
