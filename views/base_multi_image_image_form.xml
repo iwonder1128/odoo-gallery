@@ -1,0 +1,12 @@
+<odoo>
+    <record id="base_multi_image_image_form_reorder" model="ir.ui.view">
+        <field name="name">base.multi.image.image.form.reorder</field>
+        <field name="model">base_multi_image.image</field>
+        <field name="inherit_id" ref="base_multi_image.base_multi_image_image_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@string='Basic Information']" position="before">
+                <xpath expr="//page[@string='Preview']" position="move"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
