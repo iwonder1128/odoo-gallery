@@ -12,7 +12,8 @@
     ],
     "data": [
         "views/fsm_order_views.xml",
-        "views/base_multi_image_image_form.xml"
+        "views/base_multi_image_image_form.xml",
+        "views/base_multi_image_kanban.xml"
     ],
     "installable": True,
     "development_status": "Beta",
